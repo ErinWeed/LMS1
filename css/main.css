@@ -3,9 +3,20 @@
 }
 
 body {
+    background-color: rgb(22, 48, 33);
     background-image: url("/images/vertical-leaves.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+    
+body {
+    background-color: rgb(22, 48, 33);
+    background-image: url("/images/leaves.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 }
 
 .main-container {
@@ -37,20 +48,6 @@ aside ul, footer ul {
     padding-left: 0;
 }
 
-aside {
-    box-shadow: var(--shadow);
-}
-
 aside ul a, footer ul a {
     text-decoration: none;
-}
-
-@media (min-width: 992px) {
-    
-body {
-    background-image: url("/images/leaves.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 }
