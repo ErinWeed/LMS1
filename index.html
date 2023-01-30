@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weed Garden - 2023</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custommin.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  </head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top p-2 bg-light">
+        <a class="navbar-brand text-primary" href="#home">Weed <i class="bi bi-flower3"></i> Gardens</a>
+          <ul class="navbar-nav flex-row" id="tabs" role="tablist">
+            <!--put the hamburger button back in-->
+            <li class="nav-item mx-2">
+              <a class="nav-link active primary link-primary" id="home-tab" data-bs-toggle="tab" href="#home-tab-pane">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-primary" id="teams-tab" data-bs-toggle="tab" href="#teams-tab-pane">Plants</a>
+            </li>
+          </ul>
+      </nav>
+
+  </header>
+<div class="container-fluid container-xl mx-auto main-container row d-lg-flex flex-row-reverse justify-content-center"><!--entire page-->
+
+  <div class="tab-content col-12 col-md-8 col-xl-9"><!--all tabs-->
+
+    <!--make this active and show again, remove fade, fix teams page too-->
+    
+    <div class="tab-pane fade home-tab  w-100 h-100 border border-dark dark-transparent" id="home-tab-pane"><!--home tab-->
+
+      <div class="justify-contents-center p-3 rounded-3 col-md-11 my-4 mx-auto">
+          <h1 class="display-4 text-center text-light"><span class="display-6">Welcome to</span><br> 
+            Weed <i class="bi bi-flower3"></i> Gardens</h1>
+          <p class="lead text-center text-light">Come join us for the many adventures that are sure to come during the 2023 gardening season.</p>
+      </div><!--end of row-->
+
+      <div class="p-3 m-3 main rounded-3 text-light">
+      <p>While the gardens are covered with a soft blanket of snow, we can only daydream and make plans for what will lie ahead in the summer months. As we flip through photos from years past for inspiration, we come across a few favorite vignettes...</p>
+        <div class="row g-2">
+          <img class="col-12 col-sm-6 col-lg-4 rounded" src="images\currents.jpg" alt="my husband holding a large bowl full of bright red currants">
+          <video class="col-12 col-sm-6 col-lg-4 rounded" src="images/birddrinking.mov" class="object-fit-contain" muted autoplay controls></video>
+          <img class="col-12 col-sm-6 col-lg-4 rounded"  src="images\hops.jpg" alt="a zuchinni plant, hops vines, and dahlia flower">
+          <img class="col-12 col-sm-6 col-lg-4 rounded" src="images\lilies.jpg" alt="three water lilies in bloom and lily pads on the surface of my pond">
+          <img class="col-12 col-sm-6 col-lg-4 rounded"  src="images\childinbeans.jpg" alt="a child peeking out from inside a teepee made of bean plants">
+          <img class="col-12 col-sm-6 col-lg-4 rounded"  src="images\bumblebee.jpg" alt="a fuzzy bumblebee on a lemon bee balm flower">
+          <img class="col-12 col-sm-6 col-lg-4 rounded"  src="images\stock.jpg" alt="a dark pink stock flower against a backdrop of cosmos foliage">
+          
+          <img class="col-12 col-sm-6 col-lg-4 rounded"  src="images\poppy.jpg" alt="a bright purple hungarian poppy with ain intricate green center">
+          
+          <img class="col-12 col-sm-6 col-lg-4 rounded"  src="images\squirrel.jpg" alt="a fox squirrel in an apple tree who is probably responsible for eating all of my lettuce">
+          
+          <img class="col-12 col-sm-6 col-lg-4 rounded"  src="images\pinkdahlia.jpg" alt="a dark pink dahlia flower about to fully bloom">
+          <img class="col-12 col-sm-6 col-lg-4 rounded"  src="images\tomatoes.jpg" alt="a variety of different-colored tomatoes growing on vines">
+          <img class="col-12 col-sm-6 col-lg-4 rounded"  src="images\dahlia.jpg" alt="two pink pom-pom dahlias with a white picket fence in the background">
+          
+
+        </div>
+      </div><!--end of main content-->
+    </div><!--end of home tab div-->
+
+    <div class="tab-pane show active dark-transparent border border-dark" id="teams-tab-pane">
+      <h2 class="display-4 text-center text-light mt-4"> <i class="bi bi-flower3"></i><br>Meet the Plants</h2>
+      <p class="lead text-light m-3">This year's full selection of plants won't be finalized until mid March, but our perennial favorites have already gotten a head start.</p>
+
+      <table class="table table-striped table-bordered text-center bg-light">
+        <thead>
+          <tr>
+            <th>Plant Name</th>
+            <th>Variety & Year</th>
+            <th class="d-none d-sm-table-cell">Link</th>
+            <th class="d-none d-sm-table-cell">Cells</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":250}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+              <th>Lavender</th>
+              <td>Hidcote '21</td>
+              <td class="d-none d-sm-table-cell"><a href="https://www.reneesgarden.com/products/lavender-hidcote">Renee's Garden</a></td>
+              <td class="d-none d-sm-table-cell">12</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Carnation</th>
+            <td>Jeanne Dionis '21</td>
+            <td class="d-none d-sm-table-cell"><a href="https://migardener.com/products/jeanne-dionne-carnation">Migardener</a></td>
+            <td class="d-none d-sm-table-cell">12</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Money Plant</th>
+            <td>Honesty '21</td>
+            <td class="d-none d-sm-table-cell"><a href="https://www.botanicalinterests.com/product/Honesty-Money-Plant-Seeds/">Botanical Interests</a></td>
+            <td class="d-none d-sm-table-cell">12</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Chinese Lantern Plant</th>
+            <td>Gigantea '21</td>
+            <td class="d-none d-sm-table-cell"><a href="https://www.swallowtailgardenseeds.com/perennials/chinese_lantern.html">Swallowtail Garden</a></td>
+            <td class="d-none d-sm-table-cell">12</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Lupine</th>
+            <td>Russell's Hybrid, Mixed '21</td>
+            <td class="d-none d-sm-table-cell"><a href="https://ferrymorse.com/collections/lupine-seeds/products/lupine-russells-hybrid-mixed-colors">Ferry Morse</a></td>
+            <td class="d-none d-sm-table-cell">12</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Scabiosa</th>
+            <td>Butterfly Blue '21</td>
+            <td class="d-none d-sm-table-cell"><a href="https://lakevalleyseed.com/product/item-603-scabiosa-pincushion/">Lake Valley</a></td>
+            <td class="d-none d-sm-table-cell">12</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Lisianthus</th>
+            <td>Arena III Red '22</td>
+            <td class="d-none d-sm-table-cell"><a href="https://www.johnnyseeds.com/flowers/lisianthus/arena-iii-series/arena-iii-red-pelleted-f1-lisianthus-seed-1767P.html">Johnny's</a></td>
+            <td class="d-none d-sm-table-cell">6</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Lisianthus</th>
+            <td>Arena III Red '23</td>
+            <td class="d-none d-sm-table-cell"><a href="https://www.johnnyseeds.com/flowers/lisianthus/arena-iii-series/arena-iii-red-pelleted-f1-lisianthus-seed-1767P.html">Johnny's</a></td>
+            <td class="d-none d-sm-table-cell">48</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Lisianthus</th>
+            <td>Voyage 2 Lavender '22</td>
+            <td class="d-none d-sm-table-cell"><a href="https://www.johnnyseeds.com/flowers/lisianthus/voyage-2-series/voyage-2-lavender-pelleted-f1-lisianthus-4342P.html">Johnny's</a></td>
+            <td class="d-none d-sm-table-cell">6</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Lisianthus</th>
+            <td>Mariachi White '22</td>
+            <td class="d-none d-sm-table-cell"><a href="https://www.johnnyseeds.com/flowers/lisianthus/mariachi-series/mariachi-pure-white-pelleted-f1-lisianthus-seed-1962P.html">Johnny's</a></td>
+            <td class="d-none d-sm-table-cell">6</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Eryngium</th>
+            <td>Blue Glitter '23</td>
+            <td class="d-none d-sm-table-cell"><a href="https://www.johnnyseeds.com/flowers/eryngium/blue-glitter-eryngium-seed-1918.html">Johnny's</a></td>
+            <td class="d-none d-sm-table-cell">24</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Shasta Daisy</th>
+            <td>Alaska '21</td>
+            <td class="d-none d-sm-table-cell"><a href="https://ferrymorse.com/products/shasta-daisy-alaska">Ferry Morse</a></td>
+            <td class="d-none d-sm-table-cell">30</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Columbine</th>
+            <td>McKana's Mixed '21</td>
+            <td class="d-none d-sm-table-cell"><a href="https://ferrymorse.com/collections/columbine-flower-seeds/products/columbine-mckanas-giant-mixed-colors">Ferry Morse</a></td>
+            <td class="d-none d-sm-table-cell">6</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+          <tr data-bs-trigger="hover" data-bs-toggle="popover" data-bs-delay='{"show":750,"hide":500}' data-bs-placement="top" data-bs-title="test" data-bs-content="test" data-bs-html="true">
+            <th>Echinacea</th>
+            <td>Purple Coneflower '21</td>
+            <td class="d-none d-sm-table-cell"><a href="https://www.botanicalinterests.com/product/Purple-Coneflower-Echinacea-Seeds">Botanical Interests</a></td>
+            <td class="d-none d-sm-table-cell">18</td>
+            <td>
+              <button class="btn"><i class="bi bi-pencil-square"></i></button>
+              <button class="btn delete-this" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div><!--end of teams tab div-->
+
+
+  </div><!--end of all tab content-->
+
+  <aside class="aside col-11 col-md-4 col-xl-3 text-dark lead pt-2 pb-4 my-5 rounded-3  light-transparent">
+
+    <h5 class="lead text-center p-2 rounded-2 bg-light">Check out our latest progress!</h5>
+        <div class="p-2 mt-4 rounded col-8 col-md-12 col-lg-11 mx-auto polaroid text-primary text-center bg-light" >
+          <div id="aside-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/carousel/seeds.jpg" alt="Jan 23: Lisianthus and perennial seeds started." class="d-block w-100"><div class="polaroid-caption">Jan 23: Lisianthus and perennial seeds started.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/underlights.jpg" alt="Jan 25: Seed starts are under lights, just waiting." class="d-block w-100"><div class="polaroid-caption">Jan 25: Seed starts are under lights, just waiting.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/daisy-sprout.jpg" alt="Jan 27: The daisy's were the first to sprout." class="d-block w-100"><div class="polaroid-caption">Jan 27: The daisy's were the first to sprout.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/funkylupine.jpg" alt="Jan 28: Time to remove non-viable lupine seeds." class="d-block w-100"><div class="polaroid-caption">Jan 28: Time to remove non-viable lupine seeds.</div>
+              </div><!--end item-->
+            </div><!--end of carousel-inner-->
+          </div><!--end of carousel-->
+        </div><!--end polaroid-->
+        <h5 class="lead text-center p-2 rounded-2 bg-light">Favorite Products</h5>
+        <ul class="dark-transparent rounded py-2 my-3 col-10 mx-auto text-center">
+          <li><a href="https://www.amazon.com/Ladbrooke-Genuine-Micro-Block-Maker/dp/B01D5OMBLI/ref=sr_1_9" class="link-light" target="_blank">Soil Blocker</a></li>
+          <li><a href="https://www.amazon.com/dp/B019ETLC7M/ref=sspa_dk_detail_1" target="_blank" class="link-light">Grow Lights</a></li>
+          <li><a href="https://www.amazon.com/Felco-F-2-Classic-Manual-Pruner/dp/B00023RYS6/ref=sr_1_4?" class="link-light" target="_blank">Pruners</a></li>
+          <li><a href="https://www.amazon.com/VIVOSUN-Heavy-Duty-Polyester-Trellis-Netting/dp/B00P7RUI3U/ref=sr_1_4?" class="link-light" target="_blank">Flower Netting</a></li>
+          <li><a class="link-light" href="https://www.amazon.com/Fiskars-362050-1001-StaySharp-Mower-Black/dp/B01N7K4BNX?th=1" target="_blank">Reel Mower</a></li>
+
+        </ul>
+  </aside>
+
+</div><!--end of window container-->
+
+<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">
+          <h5>Please Confirm</h5></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete <span class="delete-plant-name"></span>?</p>
+        <button type="button" data-bs-dismiss="modal" class="btn btn-secondary">Cancel</button>
+        <button type="button" data-bs-dismiss="modal" class="btn btn-primary confirm-delete">Delete</button>
+      </div>
+    </div>
+  </div>
+</div><!--end of modal-->
+
+<!-- <div class="dust">
+  <svg>
+    <circle id="particle1" cx="0" cy="60" r="500" fill="white" />
+  </svg>
+</div> -->
+
+<footer class="container-fluid bg-dark text-light">
+  <div class="row justify-content-around align-items-center container-lg mx-auto">
+    <blockquote class=" blockquote col-9 col-xl-3 border py-3 my-3 rounded text-center">  <p>“To plant a garden is to believe in tomorrow.” </p><footer class="blockquote-footer">Audrey Hepburn</footer></blockquote>
+
+    <div class="col-11 col-xl-8 row justify-content-center">
+    <div class="col-10 col-md-4">
+      <h5 class="py-2">Favorite Books</h5>
+      <ul>
+        <li><a class="link-light" href="https://shop.floretflowers.com/collections/books/products/cut-flower-garden-signed-copy">Cut Flower Garden</a></li>
+        <li><a href="https://thegardenersworkshop.com/product/book-cool-flowers-by-lisa-mason-ziegler/" class="link-light">Cool Flowers</a></li>
+        <li><a href="https://www.amazon.com/Complete-Gardener-Monty-Don/dp/1405342706/ref=sr_1_20" class="link-light">The Complete Gardener</a></li>
+        <li><a href="https://www.amazon.com/DIY-Hydroponic-Gardens-Inexpensive-Growing/dp/0760357595/ref=sr_1_3" class="link-light">DIY Hydroponic Gardens</a></li>
+        <li><a href="https://www.amazon.com/Aquaponic-Gardening-Step-Step-Vegetables/dp/086571701X/ref=sr_1_3" class="link-light">Aquaponic Gardening</a></li>
+      </ul>
+    </div>
+    <div class="col-10 col-md-4">
+      <h5 class="py-2">Local Garden Stores</h5>
+    <ul>
+      <li><a href="https://www.millcreekgardens.com/" class="link-light">Millcreek Gardens</a></li>
+      <li><a href="https://glovernursery.com/" class="link-light">Glover Nursery</a></li>
+      <li><a href="https://www.cactusandtropicals.com/" class="link-light">Cactus & Tropicals</a></li>
+      <li><a href="https://westerngardens.com/" class="link-light">Western Garden Cetners</a></li>
+      <li><a href="https://www.moonlightgardensupply.com/" class="link-light">Moonlight Garden Supply</a></li>
+      <li><a href="https://utahwatergardens.com/" class="link-light">Utah Water Gardens</a></li>
+    </ul>
+    </div>
+    <div class="col-10 col-md-4">
+      <h5 class="py-2">Garden Inspiration</h5>
+      <ul>
+        <li><a href="https://www.redbuttegarden.org/" class="link-light">Red Butte Garden</a></li>
+        <li><a href="https://thanksgivingpoint.org/attractions-tickets/ashton-gardens/" class="link-light">Thanksgiving Point Gardens</a></li>
+        <li><a href="https://conservationgardenpark.org/" class="link-light">Conservation Garden Park</a></li>
+        <li><a href="https://localscapes.com/" class="link-light">Localscapes</a></li>
+        <li><a href="https://www.butchartgardens.com/" class="link-light">Butchart Gardens</a></li>
+      </ul>
+  </div><!--end of row-->
+</div>
+<p class="text-center py-3">© 2023 Weed Gardens</p>
+</footer>
+<script src="jquery-app.js"></script>
+</body>
+</html>
