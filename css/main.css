@@ -51,3 +51,44 @@ aside ul, footer ul {
 aside ul a, footer ul a {
     text-decoration: none;
 }
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.title-left {
+    transform: translateX(2rem);
+    animation: move-left 1.5s ease-in-out 1s 1 normal forwards;
+}    
+
+.title-right {
+    transform: translateX(-2rem);
+    animation: move-right 1.5s ease-in-out 1s 1 normal forwards;
+}
+
+.title-flower {
+    /* transform: scale(200%); */
+    transform-origin: center;
+    opacity: 0;
+    animation: show-flower 2s ease-in-out 1s 1 normal forwards;
+}
+
+@keyframes move-left {
+    0% { transform: translateX(2rem) }
+    50% { transform: translateX(-.5rem)  }
+    100% { transform: translateX(0rem) }
+}
+
+@keyframes move-right {
+    0% {transform: translateX(-2rem);}
+    50% { transform: translateX(.5rem)  }
+    100% { transform: translateX(0rem) }
+}
+
+@keyframes show-flower {
+    0% {opacity: 0}
+    50% {opacity: .8; transform: scale(130%);}
+    100% {opacity: 1}
+}
+
