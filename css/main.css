@@ -52,11 +52,6 @@ aside ul a, footer ul a {
     text-decoration: none;
 }
 
-.title {
-    display: flex;
-    flex-direction: row;
-}
-
 .title-left {
     transform: translateX(2rem);
     animation: move-left 1.5s ease-in-out 1s 1 normal forwards;
@@ -68,7 +63,6 @@ aside ul a, footer ul a {
 }
 
 .title-flower {
-    /* transform: scale(200%); */
     transform-origin: center;
     opacity: 0;
     animation: show-flower 2s ease-in-out 1s 1 normal forwards;
@@ -88,7 +82,7 @@ aside ul a, footer ul a {
 
 @keyframes show-flower {
     0% {opacity: 0}
-    50% {opacity: .8; transform: scale(130%);}
+    50% {opacity: .8; transform: scale(120%);}
     100% {opacity: 1}
 }
 
