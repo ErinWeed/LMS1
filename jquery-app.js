@@ -6,7 +6,7 @@ function popoverInfo() {
     let imageName = variety.outerText.slice(0,6)
 
     return `
-    <div class="container m-2 d-flex flex-column text-primary">
+    <div class="container m-2 d-flex flex-column">
     <h5 class="text-center lead"> ${name.outerText} - ${variety.outerText}</h5>
     <img class="rounded-3" src='images/popover/${imageName}.jpg'><br>
 
