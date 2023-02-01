@@ -4,11 +4,12 @@ function popoverInfo() {
     //capture information from table
     let [name, variety, link, cells] = $(this).children()
     let imageName = variety.outerText.slice(0,6)
-    $(this).attr("data-bs-title",`${name.outerText} - ${variety.outerText}`)
 
     return `
-    <div class="container m-2 d-flex flex-column">
-    <img src='images/popover/${imageName}.jpg'><br>
+    <div class="container m-2 d-flex flex-column text-primary">
+    <h5 class="text-center lead"> ${name.outerText} - ${variety.outerText}</h5>
+    <img class="rounded-3" src='images/popover/${imageName}.jpg'><br>
+
     <p>Sourced from: ${link.outerText}<br>${cells.outerText} cells planted</p>
     </div>
     `
@@ -20,6 +21,7 @@ $($rows).attr({
             "data-bs-placement": "auto",
             "data-bs-html": true,
             "data-bs-content": popoverInfo,
+            "data-bs-title": "title",
         })
 
 let $selectedRow;
