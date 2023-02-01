@@ -3,14 +3,34 @@ body {
     background-image: url("/images/vertical-leaves.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    --svg-size: 3rem;
 }
+
+
+.title-pane svg {
+    width: var(--svg-size);
+    height: var(--svg-size);
+}
+
+@media (min-width: 768px) {
+    
+    body {
+        --svg-size: 3.5rem;
+    }}
+
 
 @media (min-width: 992px) {
     
 body {
     background-image: url("/images/leaves.jpg");
-}
-}
+    --svg-size: 4rem;
+}}
+
+@media (min-width: 1200px) {
+    
+    body {
+        --svg-size: 4.5rem;
+    }}
 
 .main-container {
     margin-top: 50px;
@@ -48,12 +68,12 @@ aside ul a, footer ul a {
 /* animation */
 
 .title-left {
-    transform: translateX(2rem);
+    transform: translateX(calc(var(--svg-size) / 2));
     animation: move-left 1.5s ease-in-out 1s 1 normal forwards;
 }    
 
 .title-right {
-    transform: translateX(-2rem);
+    transform: translateX(calc(var(--svg-size) / -2));
     animation: move-right 1.5s ease-in-out 1s 1 normal forwards;
 }
 
@@ -64,13 +84,13 @@ aside ul a, footer ul a {
 }
 
 @keyframes move-left {
-    0% { transform: translateX(2rem) }
+    0% { transform: translateX(calc(var(--svg-size) / 2)) }
     50% { transform: translateX(-.5rem)  }
     100% { transform: translateX(0rem) }
 }
 
 @keyframes move-right {
-    0% {transform: translateX(-2rem);}
+    0% {transform: translateX(calc(var(--svg-size) / -2));}
     50% { transform: translateX(.5rem)  }
     100% { transform: translateX(0rem) }
 }
