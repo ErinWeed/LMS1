@@ -3,22 +3,23 @@ let $rows = $('tr[data-bs-toggle="popover"]')
 $rows.each(function(){
 
     //capture information from table
-    let $plant = $(this).children('th')
-    let $variety = $($plant).next()
-    let title = `${$plant.text()} - ${$variety.text()}`
-    let imageName = $variety.text().slice(0,6)
-    let $link = $variety.next()
-    let $cells = $link.next()
+    let [name, variety, link, cells] = $(this).children()
+    let title = `${name.outerText} - ${variety.outerText}`
+    let imageName = variety.outerText.slice(0,6)
 
     //insert info into popovers
     let toInsert = `
     <div class="container m-2 d-flex flex-column">
     <img src='images/popover/${imageName}.jpg'><br>
-    <p>Sourced from: ${$link.text()}<br>${$cells.text()} cells planted</p>
+    <p>Sourced from: ${link.outerText}<br>${cells.outerText} cells planted</p>
     </div>
     `
-    $(this).attr("data-bs-content",toInsert)
-    $(this).attr("data-bs-title", title)
+    $(this).attr({"data-bs-trigger": "hover",
+    "data-bs-delay": '{ "show": 750, "hide": 150 }',
+    "data-bs-placement": "auto",
+    "data-bs-html": true,
+    "data-bs-content":toInsert,
+    "data-bs-title": title})
 })
 
 let $selectedRow;
