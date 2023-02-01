@@ -4,10 +4,9 @@ function popoverInfo() {
     //capture information from table
     let [name, variety, link, cells] = $(this).children()
     let imageName = variety.outerText.slice(0,6)
-
     return `
     <div class="container m-2 d-flex flex-column">
-    <h5 class="text-center lead"> ${name.outerText} - ${variety.outerText}</h5>
+    <h5 class="text-center lead"> ${name.outerText} - ${variety.outerText.slice(0,-3)}</h5>
     <img class="rounded-3" src='images/popover/${imageName}.jpg'><br>
 
     <p>Sourced from: ${link.outerText}<br>${cells.outerText} cells planted</p>
