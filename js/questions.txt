@@ -1,0 +1,1 @@
+We added the main.js file to our app today. I'm curious about how this will connect
