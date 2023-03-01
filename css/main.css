@@ -6,28 +6,27 @@ body {
     --svg-size: 3rem;
 }
 
-
 .title-pane svg {
     width: var(--svg-size);
     height: var(--svg-size);
 }
 
 @media (min-width: 768px) {
-    
+
     body {
         --svg-size: 3.5rem;
     }}
 
 
 @media (min-width: 992px) {
-    
+
 body {
     background-image: url("/images/leaves.jpg");
     --svg-size: 4rem;
 }}
 
 @media (min-width: 1200px) {
-    
+
     body {
         --svg-size: 4.5rem;
     }}
@@ -65,12 +64,16 @@ aside ul a, footer ul a {
     display: none;
 }
 
+.table-header {
+    cursor: pointer;
+}
+
 /* animation */
 
 .title-left {
     transform: translateX(calc(var(--svg-size) / 2));
     animation: move-left 1.5s ease-in-out 1s 1 normal forwards;
-}    
+}
 
 .title-right {
     transform: translateX(calc(var(--svg-size) / -2));

@@ -27,9 +27,12 @@ let $selectedRow;
 let $selectedPlant;
 
 $('.delete-this').click((e)=>{
+    let test = $('.delete-plant-name')
+    console.log("test delete")
     $selectedRow = e.target.closest('tr')
     let [plant, variety] = $($selectedRow).children()
     $selectedPlant = `${plant.outerText} - ${variety.outerText}`
+
 })
 
 $(".confirm-delete").click(()=>{
