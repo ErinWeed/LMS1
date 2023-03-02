@@ -98,7 +98,15 @@ export default class ListView {
     <tr id=${row.name}
       data-bs-toggle="popover"
       data-id="${row.id}"
-      data-bs-content="${row.name}"
+      data-bs-content="
+        <h5>${row.name}</h5>
+        <img src='${row.diagram}'>
+        <ul>
+          <li>area: ${row.squareFeet}</li>
+          <li>colors: ${row.colorScheme}</li>
+          <li>sunlight: ${row.sunlight}</li>
+        </ul>"
+      data-bs-html="true"
       data-bs-trigger="hover"
       data-bs-delay="300">
       <th>${row.name}</th>

@@ -63,6 +63,11 @@ aside ul a, footer ul a {
     display: none;
 }
 
+.popover ul {
+    list-style: none;
+    padding: 0;
+}
+
 .table-header {
     cursor: pointer;
 }

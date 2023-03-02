@@ -9,21 +9,24 @@
          name:"Front Lawn",
          squareFeet: 200,
          colorScheme: "green",
-         sunlight: "full sun"
+         sunlight: "full sun",
+         diagram: "images/popover/Alaska.jpg"
        },
        {
         id: 2,
         name:"Front Borders",
         squareFeet: 2000,
         colorScheme: "mixed",
-        sunlight: "full sun"
+        sunlight: "full sun",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 3,
         name:"Front Planters",
         squareFeet: 10,
         colorScheme: "mixed",
-        sunlight: "part sun"
+        sunlight: "part sun",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 4,
@@ -31,6 +34,7 @@
         squareFeet: 200,
         colorScheme: "green",
         sunlight: "shade",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 5,
@@ -38,6 +42,7 @@
         squareFeet: 200,
         colorScheme: "yellow",
         sunlight: "part sun",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 6,
@@ -45,6 +50,7 @@
         squareFeet: 200,
         colorScheme: "green",
         sunlight: "full sun",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 7,
@@ -52,6 +58,7 @@
         squareFeet: 200,
         colorScheme: "green",
         sunlight: "full sun",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 8,
@@ -59,6 +66,7 @@
         squareFeet: 200,
         colorScheme: "green",
         sunlight: "full sun",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 9,
@@ -66,6 +74,7 @@
         squareFeet: 200,
         colorScheme: "green",
         sunlight: "full sun",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 10,
@@ -73,6 +82,7 @@
         squareFeet: 200,
         colorScheme: "jewel tones",
         sunlight: "full sun",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 11,
@@ -80,6 +90,7 @@
         squareFeet: 200,
         colorScheme: "pinks",
         sunlight: "full sun",
+        diagram: "images/popover/Alaska.jpg"
       },
       {
         id: 12,
@@ -87,6 +98,7 @@
         squareFeet: 200,
         colorScheme: "mixed",
         sunlight: "full sun",
+        diagram: "images/popover/Alaska.jpg"
       },
      ]
 
