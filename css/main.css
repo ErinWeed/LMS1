@@ -17,7 +17,6 @@ body {
         --svg-size: 3.5rem;
     }}
 
-
 @media (min-width: 992px) {
 
 body {
@@ -66,6 +65,17 @@ aside ul a, footer ul a {
 
 .table-header {
     cursor: pointer;
+}
+
+.sort-icons {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.sort-icons img {
+    padding: 0;
+    margin: 0;
 }
 
 /* animation */

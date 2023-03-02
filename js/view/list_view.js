@@ -58,25 +58,38 @@ export default class ListView {
       <tr>
         <th class="table-header" data-col="name">
           Zone
-          <i id="name-asc" class="bi bi-caret-up-fill" style="display:none"></i>
-          <i id="name-desc" class="bi bi-caret-down-fill" style="display:none"></i>
+          <div class="sort-icons">
+            <img id="name-asc" src="images/caret-up-fill.svg" alt="sort ascending" style="opacity:.3">
+            <img id="name-desc" src="images/caret-down-fill.svg" alt="sort ascending" style="opacity:.3">
+          </div>
         </th>
+
         <th class="table-header" data-col="squareFeet">
           Square Feet
-          <i id="squareFeet-asc" class="bi bi-caret-up-fill" style="display:none"></i>
-          <i id="squareFeet-desc" class="bi bi-caret-down-fill" style="display:none"></i>
+          <div class="sort-icons">
+            <img id="squareFeet-asc" src="images/caret-up-fill.svg" alt="sort ascending" style="opacity:.3">
+            <img id="squareFeet-desc" src="images/caret-down-fill.svg" alt="sort ascending" style="opacity:.3">
+          </div>
         </th>
+
         <th class="d-none d-sm-table-cell table-header" data-col="colorScheme">
           Color Scheme
-          <i id="colorScheme-asc" class="bi bi-caret-up-fill" style="display:none"></i>
-          <i id="colorScheme-desc" class="bi bi-caret-down-fill" style="display:none"></i>
+          <div class="sort-icons">
+            <img id="colorScheme-asc" src="images/caret-up-fill.svg" alt="sort ascending" style="opacity:.3">
+            <img id="colorScheme-desc" src="images/caret-down-fill.svg" alt="sort ascending" style="opacity:.3">
+          </div>
         </th>
+
         <th class="d-none d-sm-table-cell table-header" data-col="sunlight">
           Sunlight
-          <i id="sunlight-asc" class="bi bi-caret-up-fill" style="display:none"></i>
-          <i id="sunlight-desc" class="bi bi-caret-down-fill" style="display:none"></i>
+          <div class="sort-icons">
+            <img id="sunlight-asc" src="images/caret-up-fill.svg" alt="sort ascending" style="opacity:.3">
+            <img id="sunlight-desc" src="images/caret-down-fill.svg" alt="sort ascending" style="opacity:.3">
+          </div>
         </th>
+
         <th>Action</th>
+
       </tr>
     </thead>
 `
@@ -145,7 +158,6 @@ export default class ListView {
 
     $(".table-header").click(function(e){
       let sortCol = $(this).attr("data-col")
-      console.log(sortCol)
       let currentDirection = that.storage.sortDir
       if (that.storage.sortCol === sortCol) {
         that.storage.sortDir = (currentDirection == "asc" ? "desc" : "asc") // switch sort direction
@@ -157,7 +169,7 @@ export default class ListView {
       that.render()
     })
 
-    this.$headerIcon.show()
+    this.$headerIcon.css("opacity","1")
 
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
