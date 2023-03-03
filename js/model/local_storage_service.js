@@ -32,7 +32,7 @@ export default class LocalStorageService {
     return this.model.data.length
   }
 
-  get list() {
+  get list() { //async function, sorts first based in current
     return this.model.data
   }
 

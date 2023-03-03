@@ -100,7 +100,7 @@ export default class ListView {
       data-id="${row.id}"
       data-bs-content="
         <h5>${row.name}</h5>
-        <img src='${row.diagram}'>
+        <img src='${row.diagram}' alt='${row.alt}'>
         <ul>
           <li>area: ${row.squareFeet}</li>
           <li>colors: ${row.colorScheme}</li>
