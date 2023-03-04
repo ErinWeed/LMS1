@@ -1,0 +1,31 @@
+<div class="carousel-item active">
+
+                <img src="images/carousel/seeds.jpg" alt="Jan 23: Lisianthus and perennial seeds started." class="d-block w-100"><div class="polaroid-caption">Jan 23: Lisianthus and perennial seeds started.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/underlights.jpg" alt="Jan 25: Seed starts are under lights, just waiting." class="d-block w-100"><div class="polaroid-caption">Jan 25: Seed starts are under lights, just waiting.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/daisy-sprout.jpg" alt="Jan 27: The daisy's were the first to sprout." class="d-block w-100"><div class="polaroid-caption">Jan 27: The daisy's were the first to sprout.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/funkylupine.jpg" alt="Jan 28: Time to remove non-viable lupine seeds." class="d-block w-100"><div class="polaroid-caption">Jan 28: Time to remove non-viable lupine seeds.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/echinacealeaf.jpg" alt="Feb 10: Echinacea is starting to take off" class="d-block w-100"><div class="polaroid-caption">Feb 10: Echinacea is starting to take off.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/eryngiumsprouts.jpg" alt="Feb 10: We had 100% germination on the eryngium" class="d-block w-100"><div class="polaroid-caption">Feb 10: We had 100% germination on the eryngium.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/hardyanuals.jpg" alt="Feb 10: Hardy annuals are starting to sprout" class="d-block w-100"><div class="polaroid-caption">Feb 10: Hardy annuals are starting to sprout.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/lupine.jpg" alt="Feb 11: Although many seeds expired, some are thriving" class="d-block w-100"><div class="polaroid-caption">Feb 11: Although many seeds expired, some are thriving.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/manysprouts.jpg" alt="Feb 15: Happy seedlings on watering day" class="d-block w-100"><div class="polaroid-caption">Feb 15: Happy seedlings on watering day.</div>
+              </div><!--end item-->
+              <div class="carousel-item">
+                <img src="images/carousel/lisianthusprogress.jpg" alt="Mar 3: Five weeks later... lisianthus grow so slowly!" class="d-block w-100"><div class="polaroid-caption">Mar 3: Five weeks later... lisianthus grow so slowly!</div>
+              </div><!--end item-->

@@ -1,4 +1,4 @@
- var zoneData = {
+const zoneData = {
      app: {
       sortCol:"name",
       sortDir:"asc"
