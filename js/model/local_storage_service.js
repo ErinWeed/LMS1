@@ -3,7 +3,6 @@ export default class LocalStorageService {
   constructor(data, key) {
     this.origModel = data;
     this.key = key;
-    console.log('local storage constructor')
 
     if(!this.retrieve()){
       this.model = this.cloneObject(data);   //get copy of data
@@ -92,7 +91,9 @@ export default class LocalStorageService {
 
   //Sorting and Filtering Functions
   sort(col, direction, perm = false) {
+
     let teams = this.cloneObject(this.model.data)
+    if (teams.length > 0) {
     let multiplier = 1
     if (direction == "desc") multiplier = -1
 
@@ -106,6 +107,9 @@ export default class LocalStorageService {
       this.store()
     }
     return teams
+    } else {
+      return teams
+    }
   }
 
   filter(filterObj) {

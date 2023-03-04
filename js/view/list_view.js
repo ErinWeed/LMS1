@@ -51,6 +51,7 @@ export default class ListView {
 
   async render() {
     //renders table
+    console.log(`zone: ${this.entitySingle}`)
     let data = this.storage.sort(this.storage.sortCol, this.storage.sortDir, true)
     let html = `
     <table class="table table-striped table-bordered text-center bg-light">
@@ -144,8 +145,6 @@ export default class ListView {
     })
 
     $('.confirm-delete').click((e)=>{
-      console.log($deleteModal.attr("data-id"))
-      console.log(this.storage)
       this.storage.delete($deleteModal.attr("data-id"))
       this.render()
       let toInsert = `<div class="alert alert-danger alert-dismissible" id="delete-alert" role="alert">

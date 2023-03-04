@@ -2,13 +2,11 @@ export default class CarouselView {
   constructor(storage, options={}) {
     this.storage = storage
     this.options = options
-    console.log(this.options.carouselContainerId)
     this.render()
   }
 
   async render() {
     let data = this.storage.list
-    console.log(data)
     let html = ``
     let first = true
     for (let item of data) {
@@ -16,16 +14,14 @@ export default class CarouselView {
         first = false
         html +=
         `<div class="carousel-item active">
-          <img src="${item.picture}" alt="${item.picture}" class="d-block w-100"><div class="polaroid-caption">${item.caption}</div>
+          <img src="${item.picture}" alt="${item.alt}" class="d-block w-100"><div class="polaroid-caption">${item.caption}</div>
         </div>`
       } else {
       html +=
       `<div class="carousel-item">
-        <img src="${item.picture}" alt="${item.picture}" class="d-block w-100"><div class="polaroid-caption">${item.caption}</div>
+        <img src="${item.picture}" alt="${item.alt}" class="d-block w-100"><div class="polaroid-caption">${item.caption}</div>
       </div>`
     }}
-    let $carousel = $(`#carousel-container`)
-    $carousel.html(html)
-    console.log($carousel)
+    $(`#${this.options.carouselContainerId}`).html(html)
   }
 }
